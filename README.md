@@ -3,7 +3,7 @@ a encoder decoder i have to make in python for my CS class.
 
 
 # MK1
-this version is working, but oversimplified
+this version is working, but oversimplified, no data security, no compression. 
 # MK1.1
 currently working on, will add a simple encription 
 # MK2
