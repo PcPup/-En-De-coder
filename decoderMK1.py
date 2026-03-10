@@ -1,4 +1,4 @@
-# filepath: c:\Users\2001747\OneDrive - Northshore School District\Desktop\en-de-coder\decoderMK1.py
+
 import pygame
 import sys
 
@@ -98,3 +98,4 @@ if __name__ == "__main__":
 
     decoded = decode_image(image_path)
     print(f"\nDecoded message:\n{decoded}")
+
