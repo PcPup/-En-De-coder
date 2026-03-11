@@ -5,6 +5,8 @@ import math
 import os
 import threading
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # ──────────────────────────────────────────────
 # ENCODER / DECODER SETTINGS
 # ──────────────────────────────────────────────
@@ -333,6 +335,7 @@ class App(tk.Tk):
     def _on_select_cover(self):
         path = filedialog.askopenfilename(
             filetypes=[("Image files", "*.png;*.jpg;*.jpeg;*.bmp"), ("All files", "*.*")],
+            initialdir=BASE_DIR,
             title="Select cover image"
         )
         if path:
@@ -354,6 +357,7 @@ class App(tk.Tk):
         save_path = filedialog.asksaveasfilename(
             defaultextension=".png",
             filetypes=[("PNG Image", "*.png")],
+            initialdir=BASE_DIR,
             initialfile="encoded_message.png",
             title="Save encoded image"
         )
@@ -393,6 +397,7 @@ class App(tk.Tk):
     def _on_decode(self):
         file_path = filedialog.askopenfilename(
             filetypes=[("PNG Image", "*.png"), ("All files", "*.*")],
+            initialdir=BASE_DIR,
             title="Open encoded image"
         )
         if not file_path:
