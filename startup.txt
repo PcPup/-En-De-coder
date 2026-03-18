@@ -1,4 +1,0 @@
-# run the GUI app through the launcher so DISPLAY is preserved
-
-chmod +x start-gui.sh
-./start-gui.sh python3 app.py
